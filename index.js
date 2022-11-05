@@ -2,7 +2,7 @@ const {MongoClient} = require('mongodb');
 
 async function main() {
 
-    const uri = process.env.mongoConnect;
+    const uri = process.env.MongoURI;
 
     const client = new MongoClient(uri);
 
