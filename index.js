@@ -2,7 +2,7 @@ const {MongoClient} = require('mongodb');
 
 async function main() {
 
-    const uri = process.env.MongoURI;
+    const uri = `mongodb+srv://${process.env.MONGO_TEST}@cluster0.pf2p7.mongodb.net/?retryWrites=true&w=majority`;
 
     const client = new MongoClient(uri);
 
